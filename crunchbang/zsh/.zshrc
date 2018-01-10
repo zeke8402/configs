@@ -1,6 +1,6 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
-export PATH="$HOME/.config/composer/vendor/bin:$HOME/bin:$PATH"
+export PATH="$HOME/.config/composer/vendor/bin:$HOME/bin:$PATH:$HOME/.gem/ruby/2.5.0/bin"
 
 # Path to your oh-my-zsh installation.
 export ZSH=/home/zeke/.oh-my-zsh
@@ -64,8 +64,7 @@ source $ZSH/oh-my-zsh.sh
 ##########################################################
 eval $(thefuck --alias)
 alias station="cd ~/Documents/potenza/station"
-alias la='ls -la'
-alias ls='ls --color=auto'
+alias la='colorls -lA'
 
 alias update="sudo pacman -Syu"
 alias notes="cd ~/Dropbox/notes"

@@ -1,7 +1,8 @@
 ! █▓▒░ blaque magick
 
 *.foreground:   #c2c2b0
-*.background:   #222222
+!*.background:   #222222
+*.background:   #010101
 *.cursorColor:  #c2c2b0
 ! black
 *.color0:       #666666

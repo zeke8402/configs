@@ -17,17 +17,19 @@
 
 
 ! █▓▒░ color scheme
-#include "/home/zeke/zeke-black.Xcolors"
+!#include "/home/zeke/zeke-black.Xcolors"
+#include "/home/zeke/.base16/xresources/xresources/base16-ocean-256.Xresources"
 
 ! █▓▒░ fonts
 !urxvt*font: xft:gohufont:size=12:antialias=true, \
 !            xft:Symbola:pixelsize=14:antialias=true:hinting=slight
 !urxvt*font: xft:Gohu GohuFont:size=14
 !urxvt*font: xft:Gohu GohuFont:size=14
-!urxvt*font: xft: Iosevka Nerd Font Mono:size=12
-urxvt*font: xft: mplus Nerd Font Mono:size=11:antialias=true
-!urxvt*font: xft: FuraCode Nerd Font Mono:style=Regular:size=10:antialias=true
-!urxvt*font: xft: InconsolataLGC Nerd Font Mono:style=Regular:size=11
+!urxvt*font: xft: Iosevka Nerd Font Mono:size=10
+urxvt*font: xft: FantasqueSansMono Nerd Font:style=Regular:size=11
+!urxvt*font: xft: mplus Nerd Font Mono:size=11:antialias=true
+!urxvt*font: xft: FuraCode Nerd Font:style=Regular:size=10
+!urxvt*font: xft: InconsolataLGC Nerd Font Mono:style=Regular:size=9
 !urxvt*font: xft: IBM Plex Mono:size=11:antialias=true
 !urxvt*font: xft:misc gohup:size=14
 !urxvt*font: xft:TerminessTTF Nerd Font Mono:size=11:antialias=true
@@ -51,7 +53,7 @@ urxvt*lineSpace: 0
 
 ! █▓▒░ interface
 urxvt*scrollBar: false
-urxvt*transparent: true
+!urxvt*transparent: true
 urxvt*shading: 15
 !urxvt*depth: 32
 !urxvt*background: rgba:0000/0000/0000/1111
