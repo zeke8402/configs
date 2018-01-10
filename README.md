@@ -1,4 +1,4 @@
-![Screenshot](https://raw.githubusercontent.com/zeke8402/configs/master/screenshots/desktop.png)
+![Screenshot](https://raw.githubusercontent.com/zeke8402/configs/master/crunchbang/screenshots/desktop.png)
 
 # configs
 This repo has my dotfiles. I'm using GNU Stow to manage them
