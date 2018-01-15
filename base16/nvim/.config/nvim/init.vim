@@ -10,6 +10,7 @@ Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'kien/ctrlp.vim'
 Plug 'joshdick/onedark.vim'
 Plug 'chriskempson/base16-vim'
+Plug 'ryanoasis/vim-devicons'
 call plug#end()
 
 """ Look & Feel """

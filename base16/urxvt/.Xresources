@@ -17,30 +17,16 @@
 
 
 ! █▓▒░ color scheme
-#include "/home/zeke/zeke-black.Xcolors"
+!#include "/home/zeke/zeke-black.Xcolors"
+#include "/home/zeke/.base16/xresources/xresources/base16-ocean-256.Xresources"
 
 ! █▓▒░ fonts
 !urxvt*font: xft:gohufont:size=12:antialias=true, \
 !            xft:Symbola:pixelsize=14:antialias=true:hinting=slight
-!urxvt*font: xft:Gohu GohuFont:size=14
-!urxvt*font: xft:Gohu GohuFont:size=14
-!urxvt*font: xft: Iosevka Nerd Font Mono:size=12
-!urxvt*font: xft: mplus Nerd Font Mono:size=11:antialias=true
-!urxvt*font: xft: FuraCode Nerd Font:style=Regular:size=10
-urxvt*font: xft: InconsolataLGC Nerd Font Mono:style=Regular:size=10
-!urxvt*font: xft: IBM Plex Mono:size=11:antialias=true
-!urxvt*font: xft:misc gohup:size=14
-!urxvt*font: xft:TerminessTTF Nerd Font Mono:size=11:antialias=true
-!urxvt*font: -*-creep-regular-*-*--16-*-*-*-*-*-*-1
-!urxvt*font: -*-lime-*-*-*--11-*-*-*-*-*-*-1
-!urxvt*font: xft:creep:size=16:antialias=true
-!urxvt*font: xft:envy code r:size=9:antialias=false
-!urxvt*font: xft:lemon:size=16:antialias=false
-!urxvt*font: xft:lime:size=16:antialias=false
-!urxvt*font: xft:neep:size=11:antialias=false
-!urxvt*font: xft:perfect dos vga 437:size=11:antialias=false
-!urxvt*font: xft:tewi:size=11:antialias=false
-!urxvt*font: xft:Ubuntu Mono:size=11:antialias=false
+urxvt*font: xft: Iosevka Nerd Font Mono:style=Medium:size=12
+!urxvt*font: xft: mplus Nerd Font Mono:size=11:Style=Medium
+!urxvt*font: xft: MesloLGLDZ Nerd Font:size=11:Style=Medium
+
 
 urxvt*boldFont: 
 urxvt*italicFont: 

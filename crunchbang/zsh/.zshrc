@@ -10,7 +10,7 @@ export ZSH=/home/zeke/.oh-my-zsh
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 #ZSH_THEME="fishy"
 #ZSH_THEME="powerlevel9k/powerlevel9k"
-ZSH_THEME="refined"
+ZSH_THEME="josh"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"

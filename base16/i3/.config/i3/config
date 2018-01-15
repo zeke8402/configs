@@ -91,6 +91,9 @@ bindsym $mod+Shift+q kill
 # Lock screen with custom lock
 focus_follows_mouse no
 
+# One window fills whole screen
+smart_gaps on
+
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
