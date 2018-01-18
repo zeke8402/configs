@@ -1,5 +1,13 @@
 # configs
-This repo has my dotfiles. I'm using GNU Stow to manage them
+
+## Installation
+I'm using GNU stow to manage my dotfiles. I've created folders for each theme that I'll be making.
+To install, simply `cd` into the theme's directory, and for each dotfile that you'd like, use stow to symlink them.
+
+Example:
+`gnu stow -t ~ polybar`
+
+You have to specify the root dir because I wanted to separate my dotfiles into themes.
 
 # themes
 
