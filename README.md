@@ -25,3 +25,4 @@ This was inspired by the minimalist feel of crunchbang, which has evolved into A
 * set up xautolock (look i3-fancy repo)
 * screen script to change back to laptop once external is gone
 * login screen
+* create applets for status bar volume, wifi, etc.
