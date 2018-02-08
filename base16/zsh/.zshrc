@@ -68,8 +68,9 @@ alias la='colorls -lA'
 
 alias update="sudo pacman -Syu"
 alias notes="cd ~/Dropbox/notes"
-alias potdocs="cd ~/Dropbox/potenza"
+alias potdocs="cd ~/Dropbox/potenza && vim"
 alias worklogs="vim ~/Dropbox/potenza/work-logs"
+alias trapper="cd ~/Dropbox/notes && vim"
 alias vim="nvim"
 
 # X server aliases
