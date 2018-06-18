@@ -10,7 +10,7 @@ Example:
 # Current Theme 
 
 ## Base 16
-![Screenshot](https://raw.githubusercontent.com/zeke8402/configs/master/base16/screenshots/demo.png)
+![Screenshot](https://github.com/zeke8402/configs/blob/master/screenshots/demo.png)
 
 My current setup. I love the Base 16 ocean theme, so I built my configs around it (dunst isn't done yet)
 
