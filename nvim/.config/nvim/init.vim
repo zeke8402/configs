@@ -11,6 +11,9 @@ Plug 'kien/ctrlp.vim'
 Plug 'joshdick/onedark.vim'
 Plug 'chriskempson/base16-vim'
 Plug 'ryanoasis/vim-devicons'
+Plug 'posva/vim-vue'
+Plug 'w0rp/ale'
+Plug 'junegunn/goyo.vim'
 call plug#end()
 
 """ Look & Feel """
@@ -22,14 +25,15 @@ hi NonText ctermfg=fg
 
 """ Preferences """
 syntax on
-set nowrap          "Do not wrap lines"
+"set nowrap          "Do not wrap lines"
 set autoindent
 set ignorecase      "Ignore case when searching"
 set number          "Show lines numbers"
 set cursorline      "Highlight Cursor Line"
+set clipboard=unnamed
 
 " Indents are 4 spaces characters but entered with tab key
-set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
+set tabstop=4 softtabstop=0 expandtab shiftwidth=2 smarttab
 
 """ Escape Normal Mode """
 imap jj <esc>

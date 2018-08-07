@@ -175,7 +175,7 @@ exec_always --no-startup-id $HOME/.config/polybar/launch-i3-polybar.sh
 
 # Test @todo move this
 bindsym $mod+Return exec "$HOME/.config/zeke/i3lock.sh"
-bindsym Control+Shift+Return exec scrot -s
+bindsym Control+Shift+Return exec "gnome-screenshot -a"
 
 # run once at startup
 #exec --no-startup-id start-pulseaudio-x11

@@ -1,6 +1,6 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
-export PATH="$HOME/.config/composer/vendor/bin:$HOME/bin:$PATH:$HOME/.gem/ruby/2.5.0/bin"
+export PATH="$HOME/.config/composer/vendor/bin:$HOME/bin:$PATH:$HOME/.gem/ruby/2.5.0/bin:$HOME/.config/yarn/global"
 
 # Path to your oh-my-zsh installation.
 # export ZSH=/home/zeke/.oh-my-zsh
@@ -66,12 +66,14 @@ eval $(thefuck --alias)
 alias station="cd ~/Documents/potenza/station"
 alias la='colorls -lA'
 
+alias projects="cd ~/Dropbox/Programming"
 alias update="sudo pacman -Syu"
 alias notes="cd ~/Dropbox/notes"
 alias potdocs="cd ~/Dropbox/potenza && vim"
 alias worklogs="vim ~/Dropbox/potenza/work-logs"
 alias trapper="cd ~/Dropbox/notes && vim"
 alias vim="nvim"
+alias md="markdown_previewer"
 
 # X server aliases
 alias xmod="vim ~/.Xresources"
