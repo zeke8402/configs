@@ -60,10 +60,11 @@ function switch_to_external {
   su $username -c '
     /usr/bin/xrandr \
       --output eDP1  --off \
+      --output DP2-2 --auto \
       --output LVDS1 --off \
-      --output HDMI1 --auto \
-      --output HDMI2 --auto --pos 1680x0 --rotate left \
-      --output HDMI3 --auto --pos 0x600 --primary \
+      --output HDMI1 --off \
+      --output HDMI2 --off --pos 1680x0 --rotate left \
+      --output HDMI3 --off --pos 0x600 --primary \
       --output VGA1  --auto \
     '
   # alternative:
@@ -78,6 +79,7 @@ case "$DOCKED" in
   "0")
     #undocked event
     switch_to_local :0 ;;
+    i3lock
   "1")
     #docked event
     switch_to_external :0 ;;

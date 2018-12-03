@@ -92,7 +92,7 @@ bindsym $mod+Shift+q kill
 focus_follows_mouse no
 
 # One window fills whole screen
-smart_gaps on
+#smart_gaps on
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -258,7 +258,7 @@ new_float normal
 #Popups during fullscreen mode
 popup_during_fullscreen smart
 
-for_window [class="^.*"] border pixel 2
+for_window [class="^.*"] border pixel 4
 gaps inner 15 
 gaps outer 30
 #smart_gaps on

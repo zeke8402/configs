@@ -10,7 +10,9 @@ export PATH="$HOME/.config/composer/vendor/bin:$HOME/bin:$PATH:$HOME/.gem/ruby/2
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 #ZSH_THEME="fishy"
 #ZSH_THEME="powerlevel9k/powerlevel9k"
-ZSH_THEME="pure"
+#ZSH_THEME="powerlevel9k/powerlevel9k"
+#ZSH_THEME="agnoster"
+ZSH_THEME="spaceship"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -66,7 +68,7 @@ eval $(thefuck --alias)
 alias station="cd ~/Documents/potenza/station"
 alias la='colorls -lA'
 
-alias projects="cd ~/Dropbox/Programming"
+alias projects="cd ~/Dropbox/projects"
 alias update="sudo pacman -Syu"
 alias notes="cd ~/Dropbox/notes"
 alias potdocs="cd ~/Dropbox/potenza && vim"

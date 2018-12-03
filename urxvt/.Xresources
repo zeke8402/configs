@@ -18,14 +18,15 @@
 
 ! █▓▒░ color scheme
 !#include "/home/zeke/zeke-black.Xcolors"
-#include "/home/zeke/.base16/xresources/xresources/base16-ocean-256.Xresources"
+#include "/home/zeke/.base16/xresources/xresources/base16-gruvbox-dark-hard-256.Xresources"
 
 ! █▓▒░ fonts
 !urxvt*font: xft:gohufont:size=12:antialias=true, \
 !            xft:Symbola:pixelsize=14:antialias=true:hinting=slight
-urxvt*font: xft: Iosevka Nerd Font:style=Regular:size=14
+urxvt*font: xft: Iosevka Nerd Font:style=Regular:size=11
+!urxvt*font: xft: GohuFontBold Nerd Font:style=Bold:size=12
 !urxvt*font: xft: FuraCode Nerd Font:style=Regular:size=14
-!urxvt*font: xft: mplus Nerd Font Mono:size=10:Style=Medium
+!urxvt*font: xft: mplus Nerd Font:size=11:Style=medium
 !urxvt*font: xft: MesloLGLDZ Nerd Font:size=11:Style=Medium
 
 
