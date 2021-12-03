@@ -109,7 +109,7 @@ pin-workspaces=true
 type = internal/i3
 enable-click = true
 enable-scroll = true
-Additional formatting
+;Additional formatting
 ws-icon-0 = 1;
 ws-icon-1 = 2;
 ws-icon-2 = 3;
