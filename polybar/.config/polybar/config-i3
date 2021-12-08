@@ -4,9 +4,16 @@
 ; Colors
 
 [colors]
-background = ${xrdb:color0:#222}
-foreground = ${xrdb:color7:#222}
-foreground-alt = ${xrdb:color7:#222}
+; background = ${xrdb:color0:#222}
+background = #282C34
+red = #E06C75
+green = #98C379
+yellow = #E5C07B
+blue = #61AFEF
+purple = #C678DD
+turqoise = #56B6C2
+foreground = #ABB2BF
+foreground-alt = #ABB2BF
 primary = ${xrdb:color1:#222}
 secondary = ${xrdb:color2:#222}
 alert = ${xrdb:color4:#222}
@@ -36,7 +43,7 @@ module-margin-right = 2
 ; Fonts
 
 ;font-0 = misc gohup:pixelsize=11;1
-font-0 = FuraCode Nerd Font:pixelsize=12:style=Regular;1
+font-0 = FuraCode Nerd Font Mono:pixelsize=12:style=Regular;1
 ;font-0 = mplus Nerd Font Mono:pixelsize=11:style=Regular;1
 font-1 = FuraCode Nerd Font:pixelsize=9:style=Regular;1
 ;font-2 = siji:pixelsize=10;1
@@ -46,7 +53,7 @@ font-1 = FuraCode Nerd Font:pixelsize=9:style=Regular;1
 
 modules-left = i3
 modules-center = 
-modules-right = volume network battery date
+modules-right = powerline-arrow-left volume date
 tray-position = right
 tray-padding = 2
 
@@ -147,6 +154,16 @@ label-urgent-padding = 2
 type = custom/text
 content = "Arch Linux"
 content-foreground = ${colors.foreground-alt}
+
+[module/powerline-arrow-right]
+type = custom/text
+content = ""
+content-foreground = ${colors.foreground-alt}
+
+[module/powerline-arrow-left]
+type = custom/text
+content = ""
+content-foreground = ${colors.red}
 
 [module/memory]
 type = internal/memory
@@ -264,6 +281,8 @@ label-muted =" muted"
 ;label-muted-foreground = ${colors.foreground}
 format-volume-prefix-foreground = ${colors.foreground-alt}
 format-volume-underline = #ffb52a
+format-volume-background = ${colors.foreground-alt}
+content-background = ${colors.foreground}
 
 [settings]
 screenchange-reload = true
