@@ -14,6 +14,7 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'posva/vim-vue'
 Plug 'w0rp/ale'
 Plug 'junegunn/goyo.vim'
+Plug 'mboughaba/i3config.vim'
 call plug#end()
 
 """ Look & Feel """

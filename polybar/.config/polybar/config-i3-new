@@ -46,7 +46,7 @@ font-2 = "Iosevka Nerd Font Mono:pixelsize=16:style=Medium:antialias=false;3"
 modules-left = i3
 modules-center = 
 modules-right = cpu mem volume date
-tray-position = right
+tray-position = center
 tray-padding = 2
 
 ; Modules
