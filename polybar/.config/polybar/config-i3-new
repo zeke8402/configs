@@ -42,15 +42,29 @@ foreground = ${colors.foreground}
 font-0 = "Iosevka Nerd Font Mono:pixelsize=20:style=Medium:antialias=false;3"
 font-1 = "Iosevka Nerd Font Mono:pixelsize=30:style=Medium:antialias=false;6"
 font-2 = "Iosevka Nerd Font Mono:pixelsize=16:style=Medium:antialias=false;3"
+font-3 = "Iosevka Nerd Font Mono:pixelsize=10:style=Medium:antialias=false;3"
 
 modules-left = i3
 modules-center = 
-modules-right = cpu mem volume date
-tray-position = center
+modules-right = cpu mem pulseaudio-control date 
+
+[bar/bottom]
+width = 100%
+height = 30
+fixed-center = true
+radius = 0.0
+bottom = true
+background = ${colors.background}
+foreground = ${colors.foreground}
+tray-position = right 
 tray-padding = 2
 
-; Modules
+font-0 = "Iosevka Nerd Font Mono:pixelsize=16:style=Medium:antialias=false;3"
+font-1 = "Iosevka Nerd Font Mono:pixelsize=22:style=Medium:antialias=false;3"
 
+modules-right = networkspeedup networkspeeddown
+
+; Modules
 [module/xwindow]
 type = internal/xwindow
 format-prefix = " "
@@ -196,15 +210,55 @@ format-background = ${colors.yellow}
 format-foreground = ${colors.foreground-alt}
 label = " %{T2}%{T-} %{T3}%percentage%%%{T-} "
 
+[module/networkspeedup]
+type = internal/network
+interface = enp0s31f6
+label-connected = "%upspeed:7%"
+format-connected = <label-connected>
+format-connected-prefix = "%{T2}祝%{T-}"
+format-connected-prefix-foreground = ${colors.red}
+format-connected-foreground = ${colors.foreground}
+format-connected-background = ${colors.background}
+
+[module/networkspeeddown]
+type = internal/network
+interface = enp0s31f6
+label-connected = "%downspeed:7%"
+format-connected = <label-connected>
+format-connected-prefix = " %{T2}%{T-}"
+format-connected-prefix-foreground = ${colors.green}
+format-connected-foreground = ${colors.foreground}
+format-connected-background = ${colors.background}
+
+
 [module/volume]
 ; Powerline settings
 inherit = powerline-templates/right-to-left-item
 background = ${colors.turquoise}
 background-next = ${colors.purple}
-
 ; Other settings
 type = internal/alsa
 format-volume-background = ${colors.turquoise}
 format-volume-foreground = ${colors.foreground-alt}
-format-volume = "%{T2}%{T-} %{T3}<label-volume>%{T-} "
+format-volume = "%{T2}%{T-} %{T2}<label-volume>%{T-} "
 label-muted ="muted"
+click-right = exec pavucontrol &
+
+[module/pulseaudio-control]
+inherit = powerline-templates/right-to-left-item
+background = ${colors.turquoise}
+background-next = ${colors.purple}
+;Powerline settings
+type = custom/script
+tail = true
+; format-underline = ${colors.cyan}
+label-padding = 2
+label-background = ${colors.turquoise}
+label-foreground = ${colors.foreground-alt}
+exec = pulseaudio-control --icons-volume " , " --icon-muted " " --sink-nicknames-from "device.description" --sink-nickname "alsa_output.pci-0000_00_1b.0.analog-stereo:  Speakers" --sink-nickname "alsa_output.usb-Kingston_HyperX_Virtual_Surround_Sound_00000000-00.analog-stereo:  Headphones" listen
+click-right = exec pavucontrol &
+click-left = pulseaudio-control togmute
+click-middle = pulseaudio-control --sink-blacklist "alsa_output.pci-0000_01_00.1.hdmi-stereo-extra2" next-sink
+scroll-up = pulseaudio-control --volume-max 130 up
+scroll-down = pulseaudio-control --volume-max 130 down
+

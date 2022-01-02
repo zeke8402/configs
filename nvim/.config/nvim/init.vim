@@ -15,6 +15,7 @@ Plug 'posva/vim-vue'
 Plug 'w0rp/ale'
 Plug 'junegunn/goyo.vim'
 Plug 'mboughaba/i3config.vim'
+Plug 'elixir-editors/vim-elixir'
 call plug#end()
 
 """ Look & Feel """
