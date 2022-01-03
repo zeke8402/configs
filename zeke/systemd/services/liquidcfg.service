@@ -1,0 +1,9 @@
+[Unit]
+Description=AIO startup service
+
+[Service]
+Type=oneshot
+ExecStart=python /usr/local/bin/yoda.py --match corsair control fan with '(40,33),(65,66),(70,100)' on coretemp.package_id_0
+
+[Install]
+WantedBy=default.target
