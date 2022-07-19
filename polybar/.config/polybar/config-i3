@@ -53,7 +53,7 @@ font-1 = FuraCode Nerd Font:pixelsize=9:style=Regular;1
 
 modules-left = i3
 modules-center = 
-modules-right = powerline-arrow-left volume date
+modules-right = powerline-arrow-left pulseaudio date
 tray-position = right
 tray-padding = 2
 
@@ -283,6 +283,11 @@ format-volume-prefix-foreground = ${colors.foreground-alt}
 format-volume-underline = #ffb52a
 format-volume-background = ${colors.foreground-alt}
 content-background = ${colors.foreground}
+
+[module/pulseaudio]
+type = internal/pulseaudio
+use-ui-max = true
+interval = 5
 
 [settings]
 screenchange-reload = true
