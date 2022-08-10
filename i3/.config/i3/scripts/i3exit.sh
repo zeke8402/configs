@@ -1,7 +1,9 @@
 #!/bin/sh
+
+
 case "$1" in
     lock)
-        i3lock-fancy -f Ubuntu
+        betterlockscreen -l dimblur -- --time-str="%H:%M"
         ;;
     logout)
         i3-msg exit
