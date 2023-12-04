@@ -2,7 +2,7 @@
 ; ver. 3.0.5-2B
 
 ;include powerline utility
-include-file = /home/zeke/github/powerline-for-polybar/powerline-for-polybar.config
+include-file = /home/zeke/git/powerline-for-polybar/powerline-for-polybar.config
 
 ; Colors
 
@@ -39,10 +39,10 @@ foreground = ${colors.foreground}
 
 ; Fonts
 
-font-0 = "Iosevka Nerd Font Mono:pixelsize=20:style=Medium:antialias=false;3"
-font-1 = "Iosevka Nerd Font Mono:pixelsize=30:style=Medium:antialias=false;6"
-font-2 = "Iosevka Nerd Font Mono:pixelsize=16:style=Medium:antialias=false;3"
-font-3 = "Iosevka Nerd Font Mono:pixelsize=10:style=Medium:antialias=false;3"
+font-0 = "Iosevka NFM:pixelsize=20:style=Regular;antialias=false;3"
+font-1 = "Iosevka NFM:pixelsize=30:style=Regular;antialias=false;6"
+font-2 = "Iosevka NFM:pixelsize=16:style=Regular;antialias=false;3"
+font-3 = "Iosevka NFM:pixelsize=10:style=Regular;antialias=false;3"
 
 modules-left = i3
 modules-center = 
@@ -212,7 +212,7 @@ label = " %{T2}%{T-} %{T3}%percentage%%%{T-} "
 
 [module/networkspeedup]
 type = internal/network
-interface = enp0s31f6
+interface = eno1
 label-connected = "%upspeed:7%"
 format-connected = <label-connected>
 format-connected-prefix = "%{T2}祝%{T-}"
@@ -222,7 +222,7 @@ format-connected-background = ${colors.background}
 
 [module/networkspeeddown]
 type = internal/network
-interface = enp0s31f6
+interface = eno1
 label-connected = "%downspeed:7%"
 format-connected = <label-connected>
 format-connected-prefix = " %{T2}%{T-}"

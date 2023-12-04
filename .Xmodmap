@@ -1,3 +1,7 @@
 keycode 66 = Control_L
 clear Lock
 add Control = Control_L
+clear mod4
+add mod4 = Alt_L
+clear mod1
+add mod1 = Super_L

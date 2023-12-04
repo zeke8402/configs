@@ -34,6 +34,9 @@ set $right semicolon
 # current displays
 exec --no-startup-id xrandr --output DP0 --right-of HDMI-0 --auto
 
+# Setting xmodmap
+exec --no-startup-id /usr/bin/xmodmap "$HOME/configs/.Xmodmap"
+
 # setting variables for later use
 # use xrandr and/or arandr to know the names of your monitors
 # use this line to tell which monitor is on the right
