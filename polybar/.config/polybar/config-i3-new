@@ -21,7 +21,8 @@ primary = ${xrdb:color1:#222}
 secondary = ${xrdb:color2:#222}
 alert = ${xrdb:color4:#222}
 reb = ${xrdb:color1:#222}
-reb-alt = ${xrdb:color9:#222}
+reb-alt = ${xrdb:color2:#222}
+
 
 ; Bar
 ; You can Change the name of your bar in your config file script launch by polybar top &
