@@ -1,0 +1,117 @@
+/* MACOS SPOTLIGHT LIKE DARK THEME FOR ROFI  */
+/* Author: Newman Sanchez (https://github.com/newmanls) */
+
+* {
+    font:   "Lexend 16";
+
+
+    /* Color Scheme */
+    background:#0c101200;  
+    color0:#0c1012;  
+    color1:#20334A;  
+    color2:#3C4C46;  
+    color3:#943730;
+    color4:#9C5033;
+    color5:#A55D50;
+    color6:#C8604F;
+    color7:#d8bda6;
+    color8:#978474;
+    color9:#20334A;
+    color10:#3C4C46;
+    color11:#943730;
+    color12:#9C5033;
+    color13:#A55D50;
+    color14:#C8604F;
+    color15:#d8bda6;
+
+
+    color3:    #DEDEDE;
+    color4:    #FFFFFF;
+    color5:    #DEDEDE80;
+
+    background-color:   transparent;
+    text-color:         @color3;
+
+    margin:     0;
+    padding:    0;
+    spacing:    0;
+}
+
+window {
+    background-color:   @color0;
+
+    location:       center;
+    width:          640;
+    border-radius:  8;
+}
+
+inputbar {
+    font:       "Lexend 20";
+    padding:    12px;
+    spacing:    12px;
+    children:   [ icon-search, entry ];
+}
+
+icon-search {
+    expand:     false;
+    filename:   "search";
+    size: 28px;
+}
+
+icon-search, entry, element-icon, element-text {
+    vertical-align: 0.5;
+}
+
+entry {
+    font:   inherit;
+
+    placeholder         : "Search";
+    placeholder-color   : @color5;
+}
+
+message {
+    border:             2px 0 0;
+    border-color:       @color1;
+    background-color:   @color1;
+}
+
+textbox {
+    padding:    8px 24px;
+}
+
+listview {
+    lines:      10;
+    columns:    1;
+
+    fixed-height:   false;
+    border:         1px 0 0;
+    border-color:   @color1;
+}
+
+element {
+    padding:            8px 16px;
+    spacing:            16px;
+    background-color:   transparent;
+}
+
+element normal active {
+    text-color: @color2;
+}
+
+element alternate active {
+    text-color: @color2;
+}
+
+element selected normal, element selected active {
+    background-color:   @color1;
+    text-color:         @color4;
+}
+
+element-icon {
+    size:   1em;
+}
+
+element-text {
+    text-color: inherit;
+}
+
