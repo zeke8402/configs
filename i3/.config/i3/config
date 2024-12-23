@@ -124,6 +124,9 @@ bindsym mod1+F3 exec --no-startup-id xfce4-appfinder
 # start rofi small
 bindsym $mod+space exec rofi -show drun
 
+# i3lock
+bindsym $mod+BackSpace exec $HOME/.local/bin/scrlock.sh
+
 
 ################# how to exit, logoff, suspend, ...
 
